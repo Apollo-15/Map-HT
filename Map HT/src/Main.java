@@ -15,11 +15,12 @@ public class Main {
 
         for (String word : splitted) {
             if (map.containsKey(word)){
-                
-            };
-         
+                map.put(word, map.get(word) + 1);
+            } else {
+                map.put(word, 1);
+            }
         }
-
+        
 
         System.out.println("Вывод: " + map);
     }
